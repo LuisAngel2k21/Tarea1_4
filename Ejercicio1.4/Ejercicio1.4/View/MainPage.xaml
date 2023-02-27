@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tarea1_4.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" 
+               Padding="24" 
+               CornerRadius="0">
+            <Label Text="Tarea1_4" 
+                   HorizontalTextAlignment="Center" 
+                   TextColor="White" 
+                   FontSize="36"/>
+        </Frame>
+  
+
+        <Image x:Name="foto" BackgroundColor="#fafaf7"
+                   WidthRequest="100" HeightRequest="170" />
+
+        <Button Text="Tomar foto" 
+                x:Name="btnFoto"
+                Clicked="btnFoto_Clicked"
+                WidthRequest="200"
+                HorizontalOptions="Center" 
+                BackgroundColor="Blue" 
+                TextColor="White"
+                CornerRadius="0"
+                Margin="10"/>
+
+        <Frame BackgroundColor="#FFF" Padding="5" Margin="20,0,20,0" CornerRadius="4">
+            
+            <Entry x:Name="nom" Placeholder="Nombre" Keyboard="Text"/>
+        </Frame>
+
+        <Frame BackgroundColor="#FFF" Padding="5" Margin="20,0,20,20" CornerRadius="4">
+            
+            <Entry x:Name="des" Placeholder="Descripción" Keyboard="Text"/>
+        </Frame>
+
+        <Button Text="Guardar" 
+                x:Name="btnGuardar"
+                Clicked="btnGuardar_Clicked"
+                WidthRequest="200"
+                HorizontalOptions="Center" 
+                BackgroundColor="Blue" 
+                TextColor="White"
+                CornerRadius="20"
+                Margin="10"/>
+
+        <Button Text="Lista" 
+                x:Name="btnLista"
+                Clicked="btnLista_Clicked"
+                WidthRequest="200"
+                HorizontalOptions="Center" 
+                BackgroundColor="Blue" 
+                TextColor="White"
+                CornerRadius="20"
+                Margin="10"/>
+
+
+
+
+    </StackLayout>
+
+</ContentPage>
