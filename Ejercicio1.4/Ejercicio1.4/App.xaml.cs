@@ -20,27 +20,22 @@ namespace Tarea1_4
                 {
                     database = new Database(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "PM2E12513.db3"));
                 }
-
                 return database;
-
             }
 
         }
         public App()
         {
             InitializeComponent();
-
             MainPage = new NavigationPage (new MainPage());
         }
 
         protected override void OnStart()
         {
         }
-
         protected override void OnSleep()
         {
         }
-
         protected override void OnResume()
         {
         }

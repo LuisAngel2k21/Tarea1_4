@@ -15,12 +15,9 @@
                Padding="5" 
                CornerRadius="0">
 
-                <Label Text="Tarea1_4" 
-                   HorizontalTextAlignment="Center" 
-                   TextColor="White" 
-                   FontSize="36"/>
+                <Label Text="Tarea1_4" HorizontalTextAlignment="Center" TextColor="White" FontSize="36">
+                </Label>
             </Frame>
-            
             <StackLayout>
                 <Image  
                     Source="{Binding foto, Converter={StaticResource ByteToImage}}" />

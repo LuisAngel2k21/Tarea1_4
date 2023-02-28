@@ -93,9 +93,9 @@
     <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Ejercicio1.4\Ejercicio1.4.csproj">
-      <Project>{9D728DC9-8D86-4097-AB35-ADBDF49CD615}</Project>
-      <Name>Ejercicio1.4</Name>
+    <ProjectReference Include="..\Ejercicio1.4\Tarea1_4.csproj">
+      <Project>{BA5EA16B-9D0B-48A6-817F-F5BA302F98F9}</Project>
+      <Name>Tarea1_4</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

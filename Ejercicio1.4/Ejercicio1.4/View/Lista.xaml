@@ -8,43 +8,38 @@
             <converter:ByteArrayToImage x:Key="ByteToImage"/>
         </ResourceDictionary>
     </ContentPage.Resources>
-
+    <StackLayout>
         <StackLayout>
-        <StackLayout>
-            <Frame BackgroundColor="#2196F3" 
-                   Padding="24" 
-                   CornerRadius="0">
-
+            <Frame BackgroundColor="blue" 
+                   Padding="20">
                 <Label Text="Tarea1_4" 
                        HorizontalTextAlignment="Center" 
                        TextColor="White" 
                        FontSize="36"/>
-            </Frame>
-
+        </Frame>
         </StackLayout>
         <StackLayout >
-                <ScrollView HeightRequest="550">
+                <ScrollView HeightRequest="450">
                 <ListView x:Name="ListView" ItemTapped="ListaImagen_ItemTapped">
-                        <ListView.ItemTemplate>
-                            <DataTemplate>
-                                <ViewCell>
-                                    <Grid>
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid>
                                     <Image Grid.Column="0"
                                                Source="{Binding foto, Converter={StaticResource ByteToImage}}" />
-                                
-                                        <Label Grid.Column="1"
-                                               Padding="5, 10, 5, 10"
+
+                                    <Label Grid.Column="1"
+                                               Padding="5, 10, 0, 10"
                                                Text="{Binding nombre}" />
 
-                                        <Label Grid.Column="2"
-                                               Padding="5, 10, 5, 10"
+                                    <Label Grid.Column="2"
+                                               Padding="5, 10, 0, 10"
                                                Text="{Binding descripcion}" />
-                                    </Grid>
-                                </ViewCell>
-                            </DataTemplate>
-                        </ListView.ItemTemplate>
-
-                    </ListView>
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
                 </ScrollView>
             </StackLayout>
         </StackLayout>
